@@ -1,0 +1,19 @@
+
+#botones button{
+    padding: 5px;
+    margin: 2px;
+    
+    
+}
+
+.counterContainer {
+    display: block;
+    padding: 5px;
+}
+
+.col-lg-12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1px;
+}
