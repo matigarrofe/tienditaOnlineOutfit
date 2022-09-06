@@ -7,7 +7,9 @@
   pointer-events: none;
 }
 
-
+.card {
+  width: 18rem;
+}
 
 .App-header {
   background-color: #282c34;
@@ -18,5 +20,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+#btnSm {
+  background-color: rgb(120, 155, 231)!important;
+}
+
+#btnSm:hover {
+  background-color: rgb(202, 106, 106)!important;
 }
 

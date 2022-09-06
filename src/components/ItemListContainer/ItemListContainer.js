@@ -22,7 +22,8 @@ const ItemListContainer = ({greeting}) => {
   return (
     <>
     {
-      items.length > 0 ? (<ItemList ItemList={items} />) : (<div>Loading...</div>)
+      items.length > 0 ? (<ItemList ItemList={items} />) : (<div className='text-center'>Loading...</div>)
+      
     }
       
     </>
