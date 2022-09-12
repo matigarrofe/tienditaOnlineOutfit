@@ -2,18 +2,34 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
-// import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-// import {faBell} from '@fortawesome/free-solid-svg-icons'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Contact from './components/Contact/Contact';
+import About from './components/About/About';
+import Products from './components/Products/Products';
+
 
 function App() {
   return (
+<BrowserRouter>
+
     <div>
-        <NavBar />
-        <ItemListContainer greeting='EntregaCoder'/>
-        <ItemDetailContainer />
-        {/* <FontAwesomeIcon icon={faBell} />  Aun sin mostrarse */}
+    <NavBar/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer greeting='EntregaCoder'/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/products' element={<ItemListContainer/>}/>
+        <Route path='/products/:categoryId' element={<ItemListContainer/>}/>
+        <Route path='/item/:productId' element={<ItemDetailContainer/>}/>
+       
         
+
+      </Routes>
+      
+        
+        {/* <ItemDetailContainer /> */}
     </div>
+    </BrowserRouter>
   );
 }
 

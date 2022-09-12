@@ -1,0 +1,16 @@
+.contenidoCard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+    margin-top: 0 auto;
+    background-color: #e8f0f8;
+    
+}
+
+.card {
+    width: 16rem;
+    margin: 5px;
+
+}

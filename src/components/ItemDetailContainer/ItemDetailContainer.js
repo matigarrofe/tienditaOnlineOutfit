@@ -1,35 +1,25 @@
+import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
+import getFetch from "../helpers/getFetch"
 import ItemDetail from '../ItemDetail/ItemDetail'
-import { useEffect, useState } from 'react'
 
 const ItemDetailContainer = () => {
-  const [pokemonList, setPokemonList] = useState([])
-  
-  const getItems = () => {
-    
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=10&offset=0')
-      .then((response)=>{
-      return response.json()
-    }).then((data)=>{
-        setPokemonList(data.results)
-        return(data.results)
-    }).then((lista)=>{
-        return Promise.all(
-          lista.map()
-        )
-    })
-  }
-  
-  
+  const [product, setProduct] = useState()
+  const {productId} = useParams({})
+
   useEffect(()=> {
-    getItems()
-  },[])
+    getFetch.then(prod => prod.find(item=>item.id === parseInt(productId)))
+    .then(prod => setProduct(prod))
+    .catch(err => console.log(err))
+  },[productId])
+
+
+
 
   return (
-    <>
-
-      <ItemDetail listaDePokemons = {pokemonList}/>
-
-    </>
+    <div>
+      <ItemDetail product={product} />
+    </div>
   )
 }
 
