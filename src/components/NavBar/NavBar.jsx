@@ -42,6 +42,12 @@ const NavBar = () => {
                     <li className="nav-item">
                         <Link className="nav-link" to="/about" tabindex="-1" aria-disabled="true">About</Link>
                     </li>
+                    {/* <li className="nav-item">
+                        <Link className="nav-link" to="/event-listener" tabindex="-1" aria-disabled="true">Event Listener</Link>
+                    </li> */}
+                    {/* <li className="nav-item">
+                        <Link className="nav-link" to="/burbujeo">Cart</Link>
+                    </li> */}
                     <li className="nav-item">
                         <a className='nav-link' href='https://freefrontend.com/' target='blank'>Page external</a>
                     </li>

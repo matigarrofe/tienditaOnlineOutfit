@@ -6,6 +6,8 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Contact from './components/Contact/Contact';
 import About from './components/About/About';
 import Products from './components/Products/Products';
+import EventListener from './components/EventListener/EventListener';
+import Burbujeo from './components/Burbujeo/Burbujeo';
 
 
 function App() {
@@ -21,13 +23,15 @@ function App() {
         <Route path='/products' element={<ItemListContainer/>}/>
         <Route path='/products/:categoryId' element={<ItemListContainer/>}/>
         <Route path='/item/:productId' element={<ItemDetailContainer/>}/>
+        {/* <Route path='/event-listener' element={<EventListener/>}/> */}
+        {/* <Route path='/burbujeo' element={<Burbujeo/>}/> */}
        
         
 
       </Routes>
       
         
-        {/* <ItemDetailContainer /> */}
+       
     </div>
     </BrowserRouter>
   );

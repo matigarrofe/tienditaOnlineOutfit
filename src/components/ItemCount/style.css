@@ -1,19 +1,47 @@
-
-#botones button{
-    padding: 5px;
-    margin: 2px;
-    
-    
+.estilosContador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    background: #D8DEE9;
+    color: black;
+    margin: 10px auto;
+    padding: 10px;
 }
 
-.counterContainer {
-    display: block;
-    padding: 5px;
-}
-
-.col-lg-12 {
+.contenedorControles {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    /* background: #ECEFF4; */
+    width: 90%;
+    height: 30px;
+}
+
+.botonControl {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    background: #101c2b;
+}
+.botonControl:disabled{
+    background: grey;
+}
+
+.botonAgregar {
+    padding: 10px;
+    border-radius: 5px;
+    background: #101c2b;
+    color: white;
+    width: 100%;
+    margin: 10px 0;
+}
+.botonAgregar:disabled{
+    background: grey;
 }

@@ -1,5 +1,6 @@
 .contenidoCard {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
@@ -10,7 +11,8 @@
 }
 
 .card {
-    width: 16rem;
+    width: 100%;
+    height: 100vh;
     margin: 5px;
 
 }
